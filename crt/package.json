@@ -1,0 +1,23 @@
+{
+  "name": "crt-terminal-in-css-js",
+  "version": "1.0.0",
+  "description": "Emulating an oldschool CRT terminal  with scanlines, flickering text and all the retro good stuff.\nInspired by hackertyper and the hacking minigame from the Fallout game series.",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codesandbox-app/static-template.git"
+  },
+  "keywords": [],
+  "author": "Ives van Hoorne",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codesandbox-app/static-template/issues"
+  },
+  "homepage": "https://github.com/codesandbox-app/static-template#readme",
+  "devDependencies": {
+    "serve": "^11.2.0"
+  }
+}

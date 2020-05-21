@@ -1,0 +1,73 @@
+<template id="layout">
+	<style>
+		.layout {
+			display: grid;
+
+			/* shrink left and right, make the middle fit the content */
+			grid-template-columns: 1fr auto 1fr;
+			grid-template-areas:
+				". up ."
+				"left mid right"
+				". down .";
+
+			justify-items: center;
+			align-items: center;
+		}
+		.layout button {
+			background: none;
+			border: none;
+			color: var(--color);
+			padding: 1rem;
+			font-size: 2rem;
+		}
+		.layout button:disabled {
+			color: var(--bg);
+		}
+		.layout button:enabled:hover {
+			background-color: var(--bg);
+		}
+		.layout button:active {
+			color: #fff;
+		}
+		.layout .up {
+			grid-area: up;
+		}
+		.layout .left {
+			grid-area: left;
+			justify-self: end;
+		}
+		.layout .mid {
+			grid-area: mid;
+		}
+		.layout .right {
+			grid-area: right;
+			justify-self: start;
+		}
+		.layout .down {
+			grid-area: down;
+		}
+	</style>
+	<div class="layout">
+		<button class="up">▲</button>
+		<button class="left">◄</button>
+		<div class="mid"></div>
+		<button class="right">►</button>
+		<button class="down">▼</button>
+	</div>
+</template>
+
+<template id="logo">
+	<pre>
+
+▀█████████▄     ▄████████  ▄██████▄     ▄██████▄  ███    █▄     ▄████████ 
+  ███    ███   ███    ███ ███    ███   ███    ███ ███    ███   ███    ███ 
+  ███    ███   ███    ███ ███    ███   ███    █▀  ███    ███   ███    █▀  
+ ▄███▄▄▄██▀   ▄███▄▄▄▄██▀ ███    ███  ▄███        ███    ███  ▄███▄▄▄     
+▀▀███▀▀▀██▄  ▀▀███▀▀▀▀▀   ███    ███ ▀▀███ ████▄  ███    ███ ▀▀███▀▀▀     
+  ███    ██▄ ▀███████████ ███    ███   ███    ███ ███    ███   ███    █▄  
+  ███    ███   ███    ███ ███    ███   ███    ███ ███    ███   ███    ███ 
+▄█████████▀    ███    ███  ▀██████▀    ████████▀  ████████▀    ██████████ 
+               ███    ███                                                 
+</pre
+	>
+</template>
